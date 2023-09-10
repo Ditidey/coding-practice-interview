@@ -1,7 +1,7 @@
 function findClosestValueInBst(tree, target) {
     let closet = 0;
     let currentNode = tree;
-     while(closet != null ){
+     while(closet != 0 ){
        if(Math.abs(target - closet) > Math.abs(target - currentNode.value)){
          closet = currentNode.value;
        }
